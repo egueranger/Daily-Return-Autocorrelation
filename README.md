@@ -7,4 +7,4 @@ Such an asymptotic limit comes from the central limit theorem applied to the sam
 
 The negative correlation observed for most of stocks is statistically significant.
 
-We plot histogram whose xaxis represents the list of stocks and yaxis represents the empirical correlation.
+We plot histogram whose xaxis represents the list of stocks and yaxis represents the empirical correlation. Error bars do not represent uncertainty but delimitate rejection region.
