@@ -63,19 +63,11 @@ for stock in index:
     corrs.append(corr)
     n_days.append(n)
 
-#corrs = np.array([-0.03624716776010853, -0.007561370410012947, -0.10431786244175983, -0.03549838848907282, -0.03388027252863604, -0.041918843321657795, -0.04881136117503521, -0.06888733684278146, -0.1296450676669594])
-
-#n_days = [6595, 6595,4532, 6337, 6595, 6595, 4534, 6595, 6595]
-
-errors = [1.96/np.sqrt(n) for n in n_days]
-
 plt.bar(index, corrs, color="grey", edgecolor='black', alpha=0.8)
 
 thresholds = 1.96/np.sqrt(n_days)
 
 plt.errorbar(index, [0]*len(index), yerr=thresholds, color='black', capsize=5)
-
-errors = [1.96/np.sqrt(n) for n in n_days]
 
 plt.ylabel("Day/Day+1 correlation")
 plt.title("Empirical daily autocorrelation")
